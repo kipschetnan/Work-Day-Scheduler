@@ -1,11 +1,22 @@
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
 var currentTime = new Date().getHours();
 
+function inputText(btn, time, key) {
+    time.value = localStorage.getItem(key);
+    btn.addEventListener('click', function () {
+
+    localStorage.setItem(key, time.value);
+
+    });
+}
+
 function nineAm() {
     var nineAm = document.getElementById('9am');
-    var btn = getElementById('9amBtn');
+    var btn = document.getElementById('9amBtn');
+    var key = '9';
 
-
+    inputText(btn, nineAm, key);
+    
     if (currentTime < 9) {
         nineAm.classList.add('future');
     } else if (currentTime == 9) {
@@ -18,7 +29,10 @@ function nineAm() {
 
 function tenAm() {
     var tenAm = document.getElementById('10am');
-    
+    var btn = document.getElementById('9amBtn');
+    var key = '10';
+    inputText(btn, tenAm, key);
+
     if (currentTime < 10) {
         tenAm.classList.add('future');
     } else if (currentTime == 10) {
@@ -30,7 +44,10 @@ function tenAm() {
 
 function elevenAm() {
     var elAm = document.getElementById('11am');
-    
+    var btn = document.getElementById('9amBtn');
+    var key = '11';
+    inputText(btn, elAm, key);
+
     if (currentTime < 11) {
         elAm.classList.add('future');
     } else if (currentTime == 11) {
@@ -42,19 +59,10 @@ function elevenAm() {
 
 function twelvePm() {
     var twelvePm = document.getElementById('12pm');
-    
-    if (currentTime < 12) {
-        twelvePm.classList.add('future');
-    } else if (currentTime == 12) {
-        twelvePm.classList.add('present');
-    } else if (currentTime > 12) {
-        twelvePm.classList.add('past')
-    }
-}
+    var btn = document.getElementById('9amBtn');
+    var key = '12';
+    inputText(btn, twelvePm, key);
 
-function twelvePm() {
-    var twelvePm = document.getElementById('12pm');
-    
     if (currentTime < 12) {
         twelvePm.classList.add('future');
     } else if (currentTime == 12) {
@@ -66,7 +74,10 @@ function twelvePm() {
 
 function onePm() {
     var onePm = document.getElementById('1pm');
-    
+    var btn = document.getElementById('9amBtn');
+    var key = '1';
+    inputText(btn, onePm, key);
+
     if (currentTime < 13) {
         onePm.classList.add('future');
     } else if (currentTime == 13) {
@@ -78,7 +89,10 @@ function onePm() {
 
 function twoPm() {
     var twoPm = document.getElementById('2pm');
-    
+    var btn = document.getElementById('9amBtn');
+    var key = '2';
+    inputText(btn, twoPm, key);
+
     if (currentTime < 14) {
         twoPm.classList.add('future');
     } else if (currentTime == 14) {
@@ -90,7 +104,10 @@ function twoPm() {
 
 function threePm() {
     var threePm = document.getElementById('3pm');
-    
+    var btn = document.getElementById('9amBtn');
+    var key = '3';
+    inputText(btn, threePm, key);
+
     if (currentTime < 15) {
         threePm.classList.add('future');
     } else if (currentTime == 15) {
@@ -102,7 +119,10 @@ function threePm() {
 
 function fourPm() {
     var fourPm = document.getElementById('4pm');
-    
+    var btn = document.getElementById('9amBtn');
+    var key = '4';
+    inputText(btn, fourPm, key);
+
     if (currentTime < 16) {
         fourPm.classList.add('future');
     } else if (currentTime == 16) {
@@ -114,7 +134,10 @@ function fourPm() {
 
 function fivePm() {
     var fivePm = document.getElementById('5pm');
-    
+    var btn = document.getElementById('9amBtn');
+    var key = '5';
+    inputText(btn, fivePm, key);
+
     if (currentTime < 17) {
         fivePm.classList.add('future');
     } else if (currentTime == 17) {
