@@ -29,7 +29,7 @@ function nineAm() {
 
 function tenAm() {
     var tenAm = document.getElementById('10am');
-    var btn = document.getElementById('9amBtn');
+    var btn = document.getElementById('10amBtn');
     var key = '10';
     inputText(btn, tenAm, key);
 
@@ -44,7 +44,7 @@ function tenAm() {
 
 function elevenAm() {
     var elAm = document.getElementById('11am');
-    var btn = document.getElementById('9amBtn');
+    var btn = document.getElementById('11amBtn');
     var key = '11';
     inputText(btn, elAm, key);
 
@@ -59,7 +59,7 @@ function elevenAm() {
 
 function twelvePm() {
     var twelvePm = document.getElementById('12pm');
-    var btn = document.getElementById('9amBtn');
+    var btn = document.getElementById('12pmBtn');
     var key = '12';
     inputText(btn, twelvePm, key);
 
@@ -74,7 +74,7 @@ function twelvePm() {
 
 function onePm() {
     var onePm = document.getElementById('1pm');
-    var btn = document.getElementById('9amBtn');
+    var btn = document.getElementById('1pmBtn');
     var key = '1';
     inputText(btn, onePm, key);
 
@@ -89,7 +89,7 @@ function onePm() {
 
 function twoPm() {
     var twoPm = document.getElementById('2pm');
-    var btn = document.getElementById('9amBtn');
+    var btn = document.getElementById('2pmBtn');
     var key = '2';
     inputText(btn, twoPm, key);
 
@@ -104,7 +104,7 @@ function twoPm() {
 
 function threePm() {
     var threePm = document.getElementById('3pm');
-    var btn = document.getElementById('9amBtn');
+    var btn = document.getElementById('3pmBtn');
     var key = '3';
     inputText(btn, threePm, key);
 
@@ -119,7 +119,7 @@ function threePm() {
 
 function fourPm() {
     var fourPm = document.getElementById('4pm');
-    var btn = document.getElementById('9amBtn');
+    var btn = document.getElementById('4pmBtn');
     var key = '4';
     inputText(btn, fourPm, key);
 
@@ -134,7 +134,7 @@ function fourPm() {
 
 function fivePm() {
     var fivePm = document.getElementById('5pm');
-    var btn = document.getElementById('9amBtn');
+    var btn = document.getElementById('5pmBtn');
     var key = '5';
     inputText(btn, fivePm, key);
 
@@ -147,7 +147,7 @@ function fivePm() {
     }
 }
 
-function timeBlockColor() {
+function timeBlock() {
     nineAm();
     tenAm();
     elevenAm();
@@ -158,5 +158,5 @@ function timeBlockColor() {
     fourPm();
     fivePm();
 }
-timeBlockColor();
+timeBlock();
 
